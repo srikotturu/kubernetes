@@ -1,7 +1,7 @@
 # WordCount And PageRank
 The objective of this guide is to provide clear and concise instructions for performing word count and PageRank using Kubernetes on Google Cloud Platform (GCP). By following the steps outlined in this guide, users will be able to set up the required environment, deploy Spark applications on a Kubernetes cluster, and execute word count and PageRank algorithms on large-scale datasets. 
 
-[WordCount & PageRank (Google Slides)] (https://docs.google.com/presentation/d/1gILlH2dCP49LU1SN5EEWO4JpuGSVQQlj-jsV1NcI2lg/edit?usp=sharing)
+[WordCount & PageRank (Google Slides)](https://docs.google.com/presentation/d/1gILlH2dCP49LU1SN5EEWO4JpuGSVQQlj-jsV1NcI2lg/edit?usp=sharing)
 
 ## Introduction
 
@@ -52,6 +52,7 @@ This command will open a web page where you can authenticate and obtain new cred
 Follow the on-screen instructions to complete the authentication process.
 Click on the click, authorize, and copy the code. Paste the same code in the authentication
 code.
+
 2. Add the Helm stable repository:
 ```
 $ helm repo add stable https://charts.helm.sh/stable
@@ -148,6 +149,7 @@ cat <Submission ID >/stdout
 <Submission_Id> is the driver id the completed driver you can get from external IP.
 
 Output:
+
 <img src="./img/wc.png">
 ## PageRank
 
@@ -171,6 +173,7 @@ spark-submit pagerank.py /opt 2
 These will execute the PageRank algorithm on the provided input data (/opt directory) with a specified number of iterations (2).
 
 Output:
+
 <img src="./img/pg.png">
 
 
